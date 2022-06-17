@@ -42,7 +42,7 @@
           "dependencies": {
             "SendGrid": {
               "target": "Package",
-              "version": "[9.24.4, )"
+              "version": "[9.28.0, )"
             }
           },
           "imports": [

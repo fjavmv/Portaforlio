@@ -4,16 +4,25 @@
 
 <h1>Formulario de Contacto</h1>
 
+<!--get peticiones al servidor ahora 
+vamos a trabajar con peticiones http-post 
+model clase contacto
+accion en el controlador home-->
+
+<!--creamos un formaulario e indicamos a con asp-controller hacia donde quiero que se postee la información idnicando el controlador y la acción-->
 <form asp-controller="Home" asp-action="Contacto">
+    <!--margen inferior-->
     <div class="mb-3">
         <label for="nombre" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Fulano de tal" />
+        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre de la persona" />
     </div>
     <div class="mb-3">
         <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com" />
+        <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@gmail.com" />
     </div>
+    <!--margen inferior-->
     <div class="mb-3">
+        <!--for estable un enlae con otro elemento que tenga como id el mismo nombre-->
         <label for="mensaje" class="form-label">Mensaje</label>
         <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
     </div>

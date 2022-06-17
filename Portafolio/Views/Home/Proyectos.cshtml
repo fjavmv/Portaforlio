@@ -1,12 +1,16 @@
-﻿@model IEnumerable<Proyecto>
+﻿<!--Código razor-->
+@model IEnumerable<Proyecto>
 
+<!--Titulo de la pagina a traves de view data-->
 @{
     ViewData["Title"] = "Proyectos";
 }
 
+<!--cONTAINE PARA AGREGAR MARGE PEQUEÑO-->
 <div class="container">
     <h1>Mis proyectos</h1>
     <p>Aquí encontrarás todos los proyectos en los que he trabajado.</p>
 </div>
 
+<!--vista parcial de la lista de proyectos-->
 <partial name="_ListadoProyectos" model="Model" />

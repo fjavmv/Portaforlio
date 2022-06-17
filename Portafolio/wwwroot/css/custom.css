@@ -33,6 +33,10 @@
 }
 
 .habilidades i {
-    color: #0d6efd;
+    color: #018786;
     font-size: 50px;
+}
+
+.bg{
+    background:#03dac5;
 }

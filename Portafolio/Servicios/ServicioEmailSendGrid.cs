@@ -4,6 +4,8 @@ using SendGrid.Helpers.Mail;
 
 namespace Portafolio.Servicios
 {
+    //servicio utilizando sendgrid
+    //interface de sendgrid
     public interface IServicioEmail
     {
         Task Enviar(ContactoViewModel contacto);
@@ -29,9 +31,7 @@ namespace Portafolio.Servicios
             var subject = $"El cliente {    contacto.Email} quiere contactarte";
             var to = new EmailAddress(email, nombre);
             var mensajeTextoPlano = contacto.Mensaje;
-            var contenidoHtml = @$"De: {contacto.Nombre} - 
-Email: {contacto.Email}
-Mensaje: {contacto.Mensaje}";
+            var contenidoHtml = @$"De: {contacto.Nombre} - Email: {contacto.Email} Mensaje: {contacto.Mensaje}";
             var singleEmail = MailHelper.CreateSingleEmail(from, to, subject,
                                 mensajeTextoPlano, contenidoHtml);
             var respuesta = await cliente.SendEmailAsync(singleEmail);
