@@ -8,14 +8,17 @@ namespace Portafolio.Controllers
     public class HomeController : Controller
     {
         private readonly IRepositorioProyectos repositorioProyectos;
-        private readonly IServicioEmail servicioEmail;
+        private readonly IEmailSenderService emailSenderService;
+
+        // private readonly IServicioEmail servicioEmail;
 
         public HomeController(
-            IRepositorioProyectos repositorioProyectos, IServicioEmail servicioEmail
+            IRepositorioProyectos repositorioProyectos, IEmailSenderService emailSenderService //IServicioEmail servicioEmail
             )
         {
             this.repositorioProyectos = repositorioProyectos;
-            this.servicioEmail = servicioEmail;
+            this.emailSenderService = emailSenderService;
+            //this.servicioEmail = servicioEmail;
         }
 
         public IActionResult Index()
@@ -69,7 +72,7 @@ namespace Portafolio.Controllers
         {
             //permite que un método que ha llamado a otro método
             //asíncrono se espere a que dicho método asíncrono termine. 
-            await servicioEmail.Enviar(contactoViewModel);
+            await emailSenderService.SenderEmailAsync(contactoViewModel);
             //retornamos una redirección en lugar de una vista 
             return RedirectToAction("Gracias");
         }

@@ -58,3 +58,6 @@ C:\Users\Latitude\source\repos\Portafolio\Portafolio\obj\Debug\net6.0\refint\Por
 C:\Users\Latitude\source\repos\Portafolio\Portafolio\obj\Debug\net6.0\Portafolio.pdb
 C:\Users\Latitude\source\repos\Portafolio\Portafolio\obj\Debug\net6.0\Portafolio.genruntimeconfig.cache
 C:\Users\Latitude\source\repos\Portafolio\Portafolio\obj\Debug\net6.0\ref\Portafolio.dll
+C:\Users\Latitude\source\repos\Portafolio\Portafolio\bin\Debug\net6.0\MailKit.dll
+C:\Users\Latitude\source\repos\Portafolio\Portafolio\bin\Debug\net6.0\MimeKit.dll
+C:\Users\Latitude\source\repos\Portafolio\Portafolio\bin\Debug\net6.0\BouncyCastle.Crypto.dll
