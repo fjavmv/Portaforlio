@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Options;
 using MimeKit;
 using Portafolio.Models;
+using System.Linq;
 using System.Net;
 using System.Net.Mail;
 using SmtpClient = System.Net.Mail.SmtpClient;
