@@ -12,6 +12,10 @@ accion en el controlador home-->
 <!--creamos un formaulario e indicamos a con asp-controller hacia donde quiero que se postee la información idnicando el controlador y la acción-->
 <form asp-controller="Home" asp-action="Contacto">
     <!--margen inferior-->
+     <div class="mb-3">
+        <label for="asunto" class="form-label">Asunto</label>
+        <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Asunto" />
+    </div>
     <div class="mb-3">
         <label for="nombre" class="form-label">Nombre</label>
         <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre de la persona" />
