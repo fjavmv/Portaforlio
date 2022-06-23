@@ -14,7 +14,7 @@
       "launchBrowser": true,
       "applicationUrl": "https://landingpagejav.herokuapp.com/",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Production"
+        "ASPNETCORE_ENVIRONMENT": "production"
       }
     },
     "IIS Express": {
