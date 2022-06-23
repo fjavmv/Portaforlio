@@ -34,7 +34,8 @@ namespace Portafolio.Servicios
 
               //mailMessage.From = new MailAddress(contacto.Email, contacto.Nombre);
               mailMessage.Sender = new MailAddress(contacto.Email, contacto.Nombre);
-              mailMessage.To.Add(new MailAddress(_smtpSettings.ReceiverEmail,_smtpSettings.ReceiverName));
+             // mailMessage.To.Add(new MailAddress(_smtpSettings.ReceiverEmail,_smtpSettings.ReceiverName));
+              mailMessage.To.Add(new MailAddress(contacto.Nombre,contacto.Email));
               mailMessage.Subject = contacto.Asunto;
               mailMessage.Body = contacto.Mensaje;
               mailMessage.IsBodyHtml = true;
