@@ -32,9 +32,9 @@ namespace Portafolio.Servicios
               //en este apartado configuramos la api key
               MailMessage mailMessage = new MailMessage();
 
-              //mailMessage.From = new MailAddress(contacto.Email, contacto.Nombre);
-              mailMessage.Sender = new MailAddress(contacto.Email, contacto.Nombre);
-              mailMessage.To.Add(new MailAddress(_smtpSettings.ReceiverEmail,_smtpSettings.ReceiverName));
+              mailMessage.From = new MailAddress(_smtpSettings.ReceiverEmail, _smtpSettings.ReceiverName);
+              //mailMessage.Sender = new MailAddress(contacto.Email, contacto.Nombre);
+              mailMessage.To.Add(new MailAddress(contacto.Email, contacto.Nombre));
              // mailMessage.To.Add(new MailAddress(contacto.Nombre,contacto.Email));
               mailMessage.Subject = contacto.Asunto;
               mailMessage.Body = contacto.Mensaje;
